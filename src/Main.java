@@ -1,7 +1,25 @@
+import java.util.Arrays;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+        var list = new LinkedList();
+        System.out.println(list.size());
+        list.addLast(10);
+        System.out.println(list.size());
+        list.addLast(20);
+        list.addLast(30);
+        list.addLast(40);
+        System.out.println(list.size());
+//        list.removeFirst();
+//        list.removeLast();
+//        System.out.println(list.size());
+        list.reserve();
+        var arr = list.toArray();
+        System.out.println(Arrays.toString(arr));
+
+        /*
         Array numbers = new Array(5);
         numbers.insert(10);
         numbers.insert(20);
@@ -32,5 +50,7 @@ public class Main {
 //            // for you, but you can always add more by pressing Ctrl+F8.
 //            System.out.println("i = " + i);
 //        }
+
+         */
     }
 }
