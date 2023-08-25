@@ -1,15 +1,12 @@
 package inheritance;
 
-class Figure{
+abstract class Figure{
     double dim1,dim2;
     Figure(double dim1,double dim2){
         this.dim1 = dim1;
         this.dim2 = dim2;
     }
-    double area(){
-        System.out.println("Area of figure is undefined");
-        return 0;
-    }
+    abstract double area();
 }
 
 class Rectangle extends Figure{
@@ -33,7 +30,7 @@ class Triangle extends Figure{
 }
 public class FindArea {
     public static void main(String[] args) {
-        Figure f = new Figure(10,10);
+//        Figure f = new Figure(10,10);
         Rectangle r = new Rectangle(9,5);
         Triangle t = new Triangle(10,8);
 
@@ -44,7 +41,7 @@ public class FindArea {
         figF = t;
         System.out.println(figF.area());
 
-        figF = f;
-        System.out.println(figF.area());
+//        figF = f;
+//        System.out.println(figF.area());
     }
 }
