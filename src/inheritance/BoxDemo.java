@@ -1,5 +1,5 @@
 package inheritance;
-
+import java.util.*;
 public class BoxDemo {
     public static void main(String[] args) {
         BoxWeight mybox1 = new BoxWeight(10.0,15,20,34.3);
